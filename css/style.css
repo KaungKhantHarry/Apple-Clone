@@ -1,0 +1,1529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Variables for common values */
+:root {
+    --primary-color: #0071e3;
+    --text-color: #1D1D1F;
+    --text-color-light: #000000cc;
+    --white: #ffffff;
+    --button-border-radius: 980px;
+    --button-font-size-large: 17px;
+    --button-font-size-small: 14px;
+    --button-padding-large: 11px 21px;
+    --button-padding-small: 7px 15px;
+    --heading-font-size-large: 52px;
+    --heading-font-size-small: 40px;
+    --subheading-font-size-large: 28px;
+    --subheading-font-size-small: 21px;
+    --section-padding: 0 100px;
+    --card-background: #F5F5F7;
+    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Whole Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    margin: 0;
+}
+
+/* Nav Bar */
+nav {
+    cursor: default;
+    width: 100%;
+    height: 44px;
+}
+
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin: 0 120.5px;
+    height: 44px;
+    gap: 40px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 15px;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-color-light);
+    line-height: 1;
+    align-items: center;
+}
+
+.list-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Main content */
+.main {
+    width: 100%;
+    cursor: default;
+}
+
+/* Intro Section */
+.main .intro {
+    padding: var(--section-padding);
+}
+
+.main .intro img {
+    width: 100%;
+    height: 511px;
+}
+
+/* iPhone Welcome Section */
+.main .iphone-page{
+    padding: var(--section-padding);
+}
+
+.main .iphone-page .iphone-page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.main .iphone-page .iphone-page-heading h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.main .iphone-page .iphone-page-heading p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main .iphone-page video {
+    width: 100%;
+    border-radius: 50px;
+}
+
+/* Common Style for Getting to know the iPhone Section */
+.main .get-to-know-iphone {
+    padding: 0 80px 150px 80px; 
+}
+
+.main .get-to-know-iphone .know-iphone-heading {
+    padding: 80px 20px;
+}
+
+.main .get-to-know-iphone .know-iphone-heading h1{
+    font-size: var(--heading-font-size-large);
+    font-weight: 600;
+}
+
+.main .get-to-know-iphone .cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.main .get-to-know-iphone .cards a {
+    flex-shrink: 0;
+    width: 372px;
+    height: 712px;
+    text-decoration: none;
+    padding: 32px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main .get-to-know-iphone .cards a:hover{
+    transform: scale(1.05);
+    box-shadow: var(--card-shadow);
+}
+
+.main .get-to-know-iphone .cards a h1{
+    font-size: 17px;
+    font-weight: 600;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.main .get-to-know-iphone .cards a p {
+    font-size: 25px;
+    font-weight: 600;
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 0;
+}
+
+.main .get-to-know-iphone .cards-btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 15px 20px;
+}
+
+.main .get-to-know-iphone .cards-btn button {
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    font-weight: 900;
+    padding: var(--button-padding-small);
+    color: #767677;
+}
+
+/* Specific Style for Getting to know the iPhone Section */
+/* Cutting Edge Card  */
+.main .get-to-know-iphone .cards .cutting-edge {
+    background-image: url(/img/getToKnowiPhone/cutting-edge.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .cutting-edge h1{
+    color: white;
+}
+
+.main .get-to-know-iphone .cards .cutting-edge p {
+    color: white;
+}
+
+/* Chip and Battery Card */
+.main .get-to-know-iphone .cards .chip {
+    background-image: url(/img/getToKnowiPhone/chip.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .chip h1 {
+    color: white;
+}
+
+.main .get-to-know-iphone .cards .chip p {
+    color: white;
+}
+
+/* Innovation Card */
+.main .get-to-know-iphone .cards .innovation {
+    background-image: url(/img/getToKnowiPhone/innovation.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .innovation h1 {
+    color: var(--text-color);
+}
+
+.main .get-to-know-iphone .cards .innovation p {
+    color: var(--text-color);
+}
+
+/* Apple Intelligence Card */
+.main .get-to-know-iphone .cards .apple-intel {
+    background-image: url(/img/getToKnowiPhone/appleintelligent.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .apple-intel h1 {
+    color: white;
+}
+
+.main .get-to-know-iphone .cards .apple-intel p {
+    color: white;
+}
+
+/* Environment Card */
+.main .get-to-know-iphone .cards .environment {
+    background-image: url(/img/getToKnowiPhone/environment.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .environment h1 {
+    color: var(--text-color);
+}
+
+.main .get-to-know-iphone .cards .environment p {
+    color: var(--text-color);
+}
+
+/* Privacy Card */
+.main .get-to-know-iphone .cards .privacy {
+    background-image: url(/img/getToKnowiPhone/privacy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .privacy h1 {
+    color: white;
+}
+
+.main .get-to-know-iphone .cards .privacy p {
+    color: white;
+}
+
+/* Customize Card */
+.main .get-to-know-iphone .cards .customize {
+    background-image: url(/img/getToKnowiPhone/customize.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .customize h1 {
+    color: white;
+}
+
+.main .get-to-know-iphone .cards .customize p {
+    color: white;
+}
+
+/* Peace of Mind Card */
+.main .get-to-know-iphone .cards .peace {
+    background-image: url(/img/getToKnowiPhone/peaceofmind.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main .get-to-know-iphone .cards .peace h1 {
+    color: white;
+}
+
+.main .get-to-know-iphone .cards .peace p {
+    color: white;
+}
+
+/* Common styles for Compare Section */
+/* Compare Secation Heading */
+.main .compare {
+    padding: 100px 50px;
+    background-color: #F5F5F7; 
+}
+
+.main .compare .compare-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .compare .compare-heading h1{
+    font-size: var(--heading-font-size-small);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.main .compare .compare-heading a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.main .compare .compare-heading a:hover{
+    text-decoration: underline;
+}
+
+/* Comapre Contents Section */
+.main .compare .compare-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 80px 0;
+    border-bottom: solid 1px;
+    border-color: #5a5a5e;
+}
+
+.main .compare .compare-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .compare .compare-section div a {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .compare .compare-section div a img {
+    padding: 15px;
+    width: 60%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main .compare .compare-section div a img:hover {
+    transform: scale(1.05);
+}
+
+.main .compare .compare-section .color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px 20px 30px 20px;
+    align-items: center;
+}
+
+.main .compare .compare-section div .color div {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.main .compare .compare-section div h1 {
+    font-size: var(--subheading-font-size-large);
+    font-weight: 500;
+    line-height: 1.1;
+    padding-bottom: 15px;
+}
+
+.main .compare .compare-section div h3 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.1;
+    padding-bottom: 15px;
+}
+
+.main .compare .compare-section div p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+.main .compare .compare-section div .btn-gp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 25px;
+    align-items: center;
+}
+
+.main .compare .compare-section div .btn-gp .compare-see-more-btn {
+    font-size: var(--button-font-size-small);
+    font-weight: 400;
+    line-height: 1;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--button-border-radius);
+    background-color: var(--primary-color);
+    padding: var(--button-padding-large);
+    color: var(--white);
+}
+
+.main .compare .compare-section div .btn-gp .compare-buy-btn {
+    font-size: var(--button-font-size-large);
+    font-weight: 400;
+    line-height: 1;
+    border: none;
+    background-color: #F5F5F7;
+    padding: var(--button-padding-large);
+    color: var(--primary-color);
+}
+
+.main .compare .compare-section div .btn-gp .compare-buy-btn:hover {
+    text-decoration: underline;
+}
+
+/* Comapre Contents Details Section */
+.main .compare .compare-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 80px 0;
+}
+
+.main .compare .compare-detail div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .compare .compare-detail div div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.main .compare .compare-detail div div img { 
+    width: 36px;
+    height: 56px;
+}
+
+.main .compare .compare-detail div div p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* Specific Comapre Section styles */
+/* iPhone 16 Pro Compare Section Styles */
+.main .compare .compare-section .iphone-16-pro .color .color-1 {
+    background-color: #BFA48F;
+}
+
+.main .compare .compare-section .iphone-16-pro .color .color-2 {
+    background-color: #C2BCC2;
+}
+
+.main .compare .compare-section .iphone-16-pro .color .color-3 {
+    background-color: #F7F6F2;
+}
+
+.main .compare .compare-section .iphone-16-pro .color .color-4 {
+    background-color: #3C3C3D;
+}
+
+/* iPhone 16 Compare Section Styles */
+.main .compare .compare-section .iphone-16 .color .color-1 {
+    background-color: #94A5ED;
+}
+
+.main .compare .compare-section .iphone-16 .color .color-2 {
+    background-color: #ABCFCD;
+}
+
+.main .compare .compare-section .iphone-16 .color .color-3 {
+    background-color: #EDA8D5;
+}
+
+.main .compare .compare-section .iphone-16 .color .color-4 {
+    background-color: #F7F6F2;
+}
+
+.main .compare .compare-section .iphone-16 .color .color-5 {
+    background-color: #3C3C3D;
+}
+
+/* iPhone 16e Compare Section Styles */
+.main .compare .compare-section .iphone-16e .color .color-1 {
+    background-color: #F7F6F2;
+}
+
+.main .compare .compare-section .iphone-16e .color .color-2 {
+    background-color: #3C3C3D;
+}
+
+/* Common Style for Why is buying an iPhone from Apple the best? Section */
+/* Why is buying an iPhone from Apple the best? Section Heading  */
+.main .why-apple {
+    padding: 100px 50px;
+    background-color: #F5F5F7;
+}
+
+.main .why-apple .why-apple-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.main .why-apple .why-apple-heading h1 {
+    font-size: var(--heading-font-size-small);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.main .why-apple .why-apple-heading a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.main .why-apple .why-apple-heading a:hover {
+    text-decoration: underline;
+}
+
+/* Why is buying an iPhone from Apple the best? Cards Section  */
+.main .why-apple .why-apple-cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.main .why-apple .why-apple-cards .why-apple-card{
+    flex-shrink: 0;
+    width: 372px;
+    text-decoration: none;
+    padding: 32px;
+    border-radius: 30px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main .why-apple .why-apple-cards .why-apple-card:hover{
+    transform: scale(1.05);
+    box-shadow: var(--card-shadow);
+}
+
+.main .why-apple .why-apple-cards .why-apple-card img {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.main .why-apple .why-apple-cards .why-apple-card .cards-description {
+    height: 200px;
+}
+
+.main .why-apple .why-apple-cards .why-apple-card .cards-description h3 {
+    font-size: 25px;
+}
+
+.main .why-apple .why-apple-cards .why-apple-card .why-apple-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .why-apple .why-apple-cards .why-apple-card .why-apple-btn button {
+    align-self: end;
+    border-radius: 50%;
+    font-weight: 500;
+    border: none;
+    background-color: #3C3C3D;
+    color: #a5a5ae;
+    padding: var(--button-padding-small);
+}
+
+/* Common styles for Essencials for iPhone Sections
+Essencials for iPhone Sections Heading */
+.main .essentials {
+    padding: 100px 50px;
+    background-color: white;
+}
+
+.main .essentials .essentials-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .essentials .essentials-heading h1 {
+    font-size: var(--heading-font-size-small);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.main .essentials .essentials-heading a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.main .essentials .essentials-heading a:hover {
+    text-decoration: underline;
+}
+
+/* Essencials for iPhone Sections Cards */
+.main .essentials .essentials-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 80px 40px;
+}
+
+.main .essentials .essentials-cards div{
+    text-align: center;
+    background-color: #F5F5F7;
+}
+
+.main .essentials .essentials-cards .essentials-accessories-card div {
+    height: 230px;
+    padding: 30px 0;
+}
+
+.main .essentials .essentials-cards .essentials-accessories-card img{
+    width: 100%;
+}
+
+.main .essentials .essentials-cards .essentials-airtag-card div {
+    height: 230px;
+    padding: 30px 0;
+}
+
+.main .essentials .essentials-cards .essentials-airtag-card img {
+    width: 100%;
+}
+
+/* Common styles for unit links */
+.main .unit-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .unit-links a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main .unit-links a div {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main .unit-links a div h1 {
+    font-size: var(--heading-font-size-large);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--text-color);
+}
+
+.main .unit-links a div p {
+    font-size: var(--subheading-font-size-small);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-color);
+    padding: 10px 0;
+    margin: 0;
+}
+
+.main .unit-links a div .buttons {
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main .unit-links a div .buttons .see-more-btn {
+    font-size: var(--button-font-size-small);
+    font-weight: 400;
+    line-height: 1;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--button-border-radius);
+    background-color: var(--primary-color);
+    padding: var(--button-padding-large);
+    color: var(--white);
+}
+
+.main .unit-links a div .buttons .buy-btn {
+    font-size: var(--button-font-size-small);
+    font-weight: 400;
+    line-height: 1;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--button-border-radius);
+    background-color: transparent;
+    padding: var(--button-padding-large);
+    color: var(--primary-color);
+}
+
+.main .unit-links a div .buttons .buy-btn:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.main .unit-links .links img {
+    width: 100%;
+    height: 360px;
+}
+
+.main .unit-links .links a div h1 {
+    font-size: var(--heading-font-size-small);
+}
+
+.main .unit-links .links a div p {
+    font-size: var(--subheading-font-size-small);
+}
+
+.main .unit-links .links a div .buttons .see-more-btn,
+.main .unit-links .links a div .buttons .buy-btn {
+    font-size: var(--button-font-size-small);
+    padding: var(--button-padding-small);
+}
+
+/* Specific unit link styles */
+.main .unit-links .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Unit Link for iPhone Section */
+.main .unit-links .iphone-link {
+    padding-top: 30px;
+}
+
+.main .unit-links .iphone-link .iphone-heading {
+    background-color: var(--card-background);
+}
+
+/* Unit Link for MacBook Air Section */
+.main .unit-links .links .macbook-air-link .macbook-air-heading {
+    background-color: #EBF2F8;
+}
+
+/* Unit Link for iWatch Section */
+.main .unit-links .links .watch-link .watch-heading {
+    background-color: #F6F4F7;
+}
+
+/* Unit Link for MacBook Pro Section */
+.main .unit-links .links .macbook-pro-link .macbook-pro-heading,
+.main .unit-links .links .ipad-pro-link .ipad-pro-heading {
+    background-color: #000000;
+}
+
+.main .unit-links .links .macbook-pro-link .macbook-pro-heading h1,
+.main .unit-links .links .macbook-pro-link .macbook-pro-heading p {
+    color: var(--white);
+}
+
+.main .unit-links .links .macbook-pro-link .macbook-pro-heading .buttons .buy-btn{
+    background-color: #000000;
+}
+
+/* Unit Link for iPad Pro Section */
+.main .unit-links .links .ipad-pro-link .ipad-pro-heading h1,
+.main .unit-links .links .ipad-pro-link .ipad-pro-heading p {
+    color: var(--white);
+}
+
+.main .unit-links .links .ipad-pro-link .ipad-pro-heading .buttons .buy-btn {
+    background-color: #000000;
+}
+
+/* Unit Link for iPad Air Section */
+.main .unit-links .links .ipad-air-link .ipad-air-heading {
+    background-color: #B7DFED;
+}
+
+/* Products Section */
+.main .products {
+    padding: var(--section-padding);
+}
+
+.main .products .header {
+    padding: 66px 0 22px 0;
+}
+
+.main .products .header p {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.main .products .contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.main .products .contents a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.main .products .contents a:hover span {
+    color: var(--primary-color);
+}
+
+.main .products .contents a img {
+    width: 100%;
+    height: 296px;
+}
+
+.main .products .contents a span {
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color-light);
+}
+
+.main .products .contents a p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color-light);
+    margin-top: 8px;
+    padding-bottom: 28px;
+}
+
+/* Accessories Section */
+.main .accessories {
+    display: flex;
+    padding: 25px 100px;
+    justify-content: space-between;
+}
+
+.main .accessories .img-div {
+    width: 50%;
+    background-color: var(--card-background);
+    padding: 45px 0 0 45px;
+}
+
+.main .accessories .img-div img {
+    width: 100%;
+    height: 440px;
+}
+
+.main .accessories .content-div {
+    width: 50%;
+    background-color: var(--card-background);
+    text-align: center;
+    align-content: center;
+}
+
+.main .accessories .content-div .heading {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.main .accessories .content-div .description {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 17px;
+}
+
+.main .accessories .content-div .shop-now {
+    text-decoration: none;
+    cursor: pointer;
+    color: #06c;
+}
+
+.main .accessories .content-div .shop-now:hover {
+    text-decoration: underline;
+}
+
+/* Footer  */
+.footer {
+    padding: var(--section-padding);
+    background-color: var(--card-background);
+}
+
+.footer .footer-description {
+    padding: 20px 0;
+    border-bottom: solid 1px;
+    border-color: #787879;
+}
+
+.footer .footer-description p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #787879;
+}
+
+.footer .footer-lists {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+.footer .footer-lists div h2{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #787879;
+}
+
+.footer .footer-lists div ul {
+    list-style: none;
+    padding: 0 0 15px 0;
+    margin: 0;
+}
+
+.footer .footer-lists div ul li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    color: #787879;
+}
+
+.footer .footer-lists div ul li:hover {
+    text-decoration: underline;
+}
+
+/* Footer Address Section */
+.footer .footer-address {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    border-bottom: solid 1px;
+    border-color: #787879;
+}
+
+.footer .footer-address p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #787879;
+}
+
+.footer .footer-address a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* < !-- Footer CopyRight Section --> */
+.footer .footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+}
+
+.footer .footer-copyright div p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    color: #787879;
+}
+
+/* ====== TABLET ====== */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Nav Bar */
+    nav a {
+        display: none;
+    }
+
+    .nav-div {
+        margin: 0;
+    }
+
+    .action-buttons {
+        gap: 2rem;
+    }
+
+    /* Main Contents */
+    .main .intro {
+        padding: 0;
+    }
+
+    .main .intro img {
+        height: 400px;
+    }
+
+    /* iPhone Welcome Section */
+    .main .iphone-page{
+        padding: 0 30px;
+    }
+
+    .main .iphone-page .iphone-page-heading {
+        padding: 40px 0;
+    }
+
+    /* Getting to know the iPhone Section */
+    .main .get-to-know-iphone {
+        padding: 0 10px;
+    }
+
+    .main .get-to-know-iphone .know-iphone-heading {
+        padding: 40px 10px 0 10px;
+    }
+
+    .main .get-to-know-iphone .know-iphone-heading h1 {
+        font-size: var(--heading-font-size-small);
+        font-weight: 600;
+    }
+
+    .main .get-to-know-iphone .cards a {
+        width: 280px;
+        height: 500px;
+    }
+
+    .main .get-to-know-iphone .cards a h1 {
+        font-size: 14px;
+    }
+
+    .main .get-to-know-iphone .cards a p {
+        font-size: 19px;
+    }
+
+    /* Compare Section */
+    .main .compare .compare-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main .compare .compare-section div h3 {
+        font-size: 14px;
+    }
+
+    .main .compare .compare-detail div .carema {
+        height: 320px;
+    }
+
+    /* Why is buying an iPhone from Apple the best? Cards Section  */
+    .main .why-apple {
+        padding: 100px 20px;
+    }
+
+    .main .why-apple .why-apple-heading {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /* Essencials for iPhone Cards Sections*/
+    .main .essentials {
+        padding: 100px 20px;
+    }
+
+    .main .essentials .essentials-heading {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /* Unit Links Section */
+    .main .unit-links .iphone-link .iphone-heading .buttons {
+        padding-bottom: 30px;
+    }
+
+    .main .unit-links .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .main .unit-links .links a {
+        padding-bottom: 0;
+    }
+
+    .main .unit-links .links .heading h1 {
+        font-size: var(--heading-font-size-large);
+    }
+
+    .main .unit-links .links .heading p {
+        font-size: var(--subheading-font-size-large);
+    }
+
+    .main .unit-links .links .heading .buttons .see-more-btn,
+    .main .unit-links .links .heading .buttons .buy-btn {
+        font-size: var(--button-font-size-large);
+        padding: var(--button-padding-large);
+    }
+
+    .main .unit-links .links img {
+        height: 250px;
+    }
+
+    /* Products Section */
+    .main .products {
+        padding: 0;
+    }
+
+    /* Accessories Section */
+    .main .accessories {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main .accessories .img-div {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding-top: 40px;
+    }
+
+    .main .accessories .img-div img {
+        width: 50%;
+    }
+
+    .main .accessories .content-div {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /* Footer  */
+    .footer {
+        padding: 0 20px;
+    }
+
+    .footer .footer-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer .footer-lists div ul {
+        display: none;
+    }
+
+    .footer .footer-lists div h2 {
+        border-bottom: solid 1px;
+        border-color: #787879;
+        padding-bottom: 15px;
+    }
+
+    .footer .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+/* ====== PHONE ====== */
+@media screen and (max-width: 600px) {
+    /* Nav Bar */
+    nav a {
+        display: none;
+    }
+
+    .nav-div {
+        margin: 0;
+    }
+
+    /* Main Content */
+    .main .intro {
+        padding: 0;
+    }
+
+    .main .intro img {
+        height: auto;
+    }
+
+    /* iPhone Welcome Section */
+    .main .iphone-page {
+        padding: 0;
+    }
+
+    .main .iphone-page .iphone-page-heading {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .main .iphone-page .iphone-page-heading h1 {
+        font-size: var(--heading-font-size-small);
+    }
+
+    .main .iphone-page .iphone-page-heading p {
+        font-size: var(--subheading-font-size-small);
+    }
+
+    .main .iphone-page video {
+        border-radius: 30px;
+    }
+
+    /* Getting to know the iPhone Section */
+    .main .get-to-know-iphone {
+        padding: 0 10px;
+    }
+
+    .main .get-to-know-iphone .know-iphone-heading {
+        padding: 40px 10px 0 10px;
+    }
+
+    .main .get-to-know-iphone .know-iphone-heading h1 {
+        font-size: var(--subheading-font-size-large);
+        font-weight: 600;
+    }
+
+    .main .get-to-know-iphone .cards a {
+        width: 280px;
+        height: 500px;
+    }
+
+    .main .get-to-know-iphone .cards a h1 {
+        font-size: 12px;
+    }
+
+    .main .get-to-know-iphone .cards a p {
+        font-size: 17px;
+    }
+
+    /* Compare Section */
+    .main .compare .compare-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main .compare .compare-section {
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+        white-space: nowrap;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main .compare .compare-section div {
+        flex-shrink: 0;
+        width: 250px;
+    }
+
+    .main .compare .compare-section div .color{
+        display: none;
+    }
+
+    .main .compare .compare-section div h3 {
+        font-size: 14px;
+    }
+
+    /* Compare Detail Section */
+    .main .compare .compare-detail {
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+        white-space: nowrap;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main .compare .compare-detail div {
+        flex-shrink: 0;
+        width: 250px;
+    }
+
+    .main .compare .compare-detail div .carema {
+        height: 320px;
+    }
+
+    .main .compare .compare-detail div .carema p{
+        height: 320px;
+        width: 200px;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    /* Why is buying an iPhone from Apple the best? Cards Section  */
+    .main .why-apple {
+        padding: 100px 20px;
+    }
+
+    .main .why-apple .why-apple-heading {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+
+    /* Why is buying an iPhone from Apple the best? Cards Section  */
+    .main .why-apple .why-apple-cards .why-apple-card {
+        width: 280px;
+    }
+
+    .main .why-apple .why-apple-cards .why-apple-card .cards-description h3 {
+        font-size: 18px;
+    }
+
+    .main .why-apple .why-apple-cards .why-apple-card .cards-description p {
+        font-size: 13px;
+    }
+
+    /* Essencials for iPhone Cards Sections*/
+    .main .essentials {
+        padding: 100px 20px;
+    }
+
+    .main .essentials .essentials-heading {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main .essentials .essentials-cards {
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+        white-space: nowrap;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main .essentials .essentials-cards div {
+        padding: 20px;
+    }
+
+    .main .essentials .essentials-cards .essentials-accessories-card,
+    .main .essentials .essentials-cards .essentials-airtag-card {
+        flex-shrink: 0;
+        width: 250px;
+    }
+
+    .main .essentials .essentials-cards .essentials-accessories-card div h1, 
+    .main .essentials .essentials-cards .essentials-airtag-card div h1 {
+        font-size: 15px;
+    }
+
+    .main .essentials .essentials-cards .essentials-accessories-card div p,
+    .main .essentials .essentials-cards .essentials-airtag-card div p {
+        font-size: 11px;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .main .essentials .essentials-cards .essentials-accessories-card div a,
+    .main .essentials .essentials-cards .essentials-airtag-card div a {
+        font-size: 11px;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    /* Unit Links Section  */
+    /* Unit Links for iPhone Section */
+    .main .unit-links .iphone-link {
+        padding-bottom: 15px;
+    }
+
+    .main .unit-links .iphone-link .iphone-heading p {
+        font-size: 18px;
+    }
+
+    .main .unit-links .iphone-link .iphone-heading .buttons {
+        padding-bottom: 40px;
+    }
+
+    .main .unit-links .iphone-link img {
+        height: 300px;
+    }
+
+    .main .unit-links .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .main .unit-links .links a {
+        padding-bottom: 0;
+    }
+
+    .main .unit-links .links .heading h1 {
+        font-size: var(--heading-font-size-large);
+    }
+
+    .main .unit-links .links .heading p {
+        font-size: 18px;
+    }
+
+    .main .unit-links .links .heading .buttons {
+        padding-bottom: 40px;
+    }
+
+    .main .unit-links .links .heading .buttons .see-more-btn,
+    .main .unit-links .links .heading .buttons .buy-btn {
+        font-size: var(--button-font-size-large);
+        padding: var(--button-padding-large);
+    }
+
+    .main .unit-links .links img {
+        height: 300px;
+    }
+
+    /* Products Section */
+    .main .products {
+        padding: 0;
+    }
+
+    .main .products .mac,
+    .main .products .iphone,
+    .main .products .applewatch,
+    .main .products .ipad,
+    .main .products .audio {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .main .products .contents {
+        padding: 0 30px;
+        display: flex;
+        overflow-x: scroll;
+        gap: 15px;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .main .products .contents a {
+        width: 280px;
+        flex-shrink: 0;
+    }
+
+    .main .products .contents a span {
+        padding: 20px 30px;
+    }
+
+    /* Accessories Section */
+    .main .accessories {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main .accessories .img-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .main .accessories .img-div img {
+        width: 80%;
+        padding-left: 20px;
+    }
+
+    .main .accessories .content-div {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /* Footer  */
+    .footer {
+        padding: 0 20px;
+    }
+
+    .footer .footer-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer .footer-lists div ul {
+        display: none;
+    }
+
+    .footer .footer-lists div h2 {
+        border-bottom: solid 1px;
+        border-color: #787879;
+        padding-bottom: 15px;
+    }
+
+    .footer .footer-address {
+        display: none;
+    }
+
+    .footer .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
