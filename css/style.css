@@ -196,7 +196,7 @@ nav a {
 /* Specific Style for Getting to know the iPhone Section */
 /* Cutting Edge Card  */
 .main .get-to-know-iphone .cards .cutting-edge {
-    background-image: url(/img/getToKnowiPhone/cutting-edge.jpg);
+    background-image: url(../img/getToKnowiPhone/cutting-edge.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -211,7 +211,7 @@ nav a {
 
 /* Chip and Battery Card */
 .main .get-to-know-iphone .cards .chip {
-    background-image: url(/img/getToKnowiPhone/chip.jpg);
+    background-image: url(../img/getToKnowiPhone/chip.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -226,7 +226,7 @@ nav a {
 
 /* Innovation Card */
 .main .get-to-know-iphone .cards .innovation {
-    background-image: url(/img/getToKnowiPhone/innovation.jpg);
+    background-image: url(../img/getToKnowiPhone/innovation.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -241,7 +241,7 @@ nav a {
 
 /* Apple Intelligence Card */
 .main .get-to-know-iphone .cards .apple-intel {
-    background-image: url(/img/getToKnowiPhone/appleintelligent.jpg);
+    background-image: url(../img/getToKnowiPhone/appleintelligent.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -256,7 +256,7 @@ nav a {
 
 /* Environment Card */
 .main .get-to-know-iphone .cards .environment {
-    background-image: url(/img/getToKnowiPhone/environment.jpg);
+    background-image: url(../img/getToKnowiPhone/environment.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -271,7 +271,7 @@ nav a {
 
 /* Privacy Card */
 .main .get-to-know-iphone .cards .privacy {
-    background-image: url(/img/getToKnowiPhone/privacy.jpg);
+    background-image: url(../img/getToKnowiPhone/privacy.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -286,7 +286,7 @@ nav a {
 
 /* Customize Card */
 .main .get-to-know-iphone .cards .customize {
-    background-image: url(/img/getToKnowiPhone/customize.jpg);
+    background-image: url(../img/getToKnowiPhone/customize.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -301,7 +301,7 @@ nav a {
 
 /* Peace of Mind Card */
 .main .get-to-know-iphone .cards .peace {
-    background-image: url(/img/getToKnowiPhone/peaceofmind.jpg);
+    background-image: url(../img/getToKnowiPhone/peaceofmind.jpg);
     background-position: center;
     background-size: cover;
 }
